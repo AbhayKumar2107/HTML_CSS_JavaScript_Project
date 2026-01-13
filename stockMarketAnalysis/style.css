@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.header{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(166, 72, 255);
+    color: #ffffff;
+}
+
+.header h1{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.chart-list-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.list-section table{
+    border: 3px solid black;
+    border-radius: 10px;
+    /* border-collapse: collapse; */    
+    width: 400px;
+    height: 550px;
+    text-align: center;
+}
+th{
+    background-color: rgb(166, 72, 255);
+    color: #ffffff;
+}
+th,td{
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.chart-section{
+    border: 3px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#chart_div{
+    width: 900px;
+    height: 500px;
+}
+
+.chartButtons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+.timeButton{
+    border: none;
+    border-radius: 4px;
+    padding: 2px;
+    width: 60px;
+    height: 30px;
+    background-color: rgb(166, 72, 255);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.timeButton:active{
+    transform: scale(0.9);
+}
+
+.stockButton:hover{
+    background-color: rgba(131, 0, 253, 0.285);
+    cursor: pointer;
+}
+
+.stockButton:active{
+    transform: scale(0.9);
+}
+
+tr:nth-child(odd){
+    background-color: rgba(174, 174, 174, 0.192);
+}
+
+.details-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px 20px 0px;
+}
+.detail-heading{
+    background-color: rgb(166, 72, 255);
+    color: #ffffff;
+    width: 90%;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+
+.stockDetail{
+    width: 90%;
+}
+
+
+.greenColor{
+    color: rgb(1, 163, 1);
+}
+
+.redColor{
+    color: rgb(208, 1, 1);
+}

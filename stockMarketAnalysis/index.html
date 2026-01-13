@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Market Analysis</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Stock Market Analysis</h1>
+    </div>
+    <div class="chart-list-container">
+      <div class="chart-section">
+        <div id="chart_div"></div>
+        <div class="chartButtons">
+          <button class="timeButton" value="1mo">1 Month</button>
+          <button class="timeButton" value="3mo">3 Month</button>
+          <button class="timeButton" value="1y">1 Year</button>
+          <button class="timeButton" value="5y">5 Year</button>
+        </div>
+      </div>
+      <div class="list-section">
+        <table>
+          <thead>
+            <th>Stock</th>
+            <th>Value</th>
+            <th>Profit</th>
+          </thead>
+          <tbody class="list-body">
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="details-section">
+      <h2 class="detail-heading">Stock Detail</h2>
+      <p class="stockDetail"></p>
+    </div>
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
